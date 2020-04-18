@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="737e352a-c089-449e-8b8c-742b424617f3" name="Default Changelist" comment="" />
+    <list default="true" id="737e352a-c089-449e-8b8c-742b424617f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.packagespec.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1ai0Kk3Bkgyvpnvz6ipeoopsShR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -16,6 +54,7 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -28,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587203045521</updated>
-      <workItem from="1587203048174" duration="337000" />
+      <workItem from="1587203048174" duration="1677000" />
     </task>
     <servers />
   </component>
@@ -37,6 +76,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1587203432790">
       <screen x="1680" y="0" width="3440" height="1440" />
