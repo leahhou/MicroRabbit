@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="737e352a-c089-449e-8b8c-742b424617f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/MicroRabbit.Domain.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbitQ.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbitQ.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,10 +30,12 @@
       <list>
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" />
-        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/Class1.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587203045521</updated>
-      <workItem from="1587203048174" duration="1677000" />
+      <workItem from="1587203048174" duration="3220000" />
     </task>
     <servers />
   </component>
@@ -88,9 +83,13 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1587203432790">
+    <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1587204865281">
       <screen x="1680" y="0" width="3440" height="1440" />
     </state>
-    <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050/1680.0.3440.1440@1680.0.3440.1440" timestamp="1587203432790" />
+    <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050/1680.0.3440.1440@1680.0.3440.1440" timestamp="1587204865281" />
+    <state x="3928" y="337" key="RiderGenerateDialog" timestamp="1587205029329">
+      <screen x="1680" y="0" width="3440" height="1440" />
+    </state>
+    <state x="3928" y="337" key="RiderGenerateDialog/0.0.1680.1050/1680.0.3440.1440@1680.0.3440.1440" timestamp="1587205029329" />
   </component>
 </project>

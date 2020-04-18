@@ -14,7 +14,7 @@ namespace MicroRabbit.Domain.Core.Bus
         //publish Event, event is reserved keyword:event, thus add @ in front of the event
         void Publish<T>(T @event) where T : Event;
 
-        void Subscrive<T, TH>()
+        void Subscribe<T, TH>()
             where T : Event
             where TH : IEventHandler<T>;
 
