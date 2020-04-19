@@ -9,6 +9,7 @@ using MicroRabbit.Domain.Core.Commands;
 using MicroRabbit.Domain.Core.Events;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace MicroRabbit.Infrastructure.Bus
 {
@@ -16,9 +17,11 @@ namespace MicroRabbit.Infrastructure.Bus
     public sealed class RabbitMQBus : IEventBus
     {
         private readonly IMediator _mediator;
-        private readonly Dictionary<string, List<Type>> _handlers; //hold handlers for all events
-        private readonly List<Type> _eventTypes;
+        //eventHandlers to handle our subscription events and event types'
+        private readonly Dictionary<string, List<Type>> _handlers; // eventHandler: key: eventName, value: List of subscriptions related to the eventName
+        private readonly List<Type> _eventTypes; // hold all types of event
 
+        // like a subscription handler that handles and knows about which subscription are tired to which handlers and events
         public RabbitMQBus(IMediator mediator)
         {
             _mediator = mediator;
@@ -30,7 +33,8 @@ namespace MicroRabbit.Infrastructure.Bus
         {
             return _mediator.Send(command);
         }
-
+        
+        //publish the event to the queue in RabbitMQ Server
         public void Publish<T>(T @event) where T : Event
         {
             var factory = new ConnectionFactory() {HostName = "localhost"};
@@ -41,40 +45,114 @@ namespace MicroRabbit.Infrastructure.Bus
 
                 channel.QueueDeclare(eventName, false, false, false, null);
 
+                // message is the body of an event
                 var message = JsonConvert.SerializeObject(@event);
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish("", eventName, null, body);
             }
         }
-
-        public void Subscribe<T, TH>() where T : Event where TH : IEventHandler<T>
+        
+        //takes in event + eventHandler, when subscribe to an event, it will used the required eventHandler
+        public void Subscribe<T, THandler>() where T : Event where THandler : IEventHandler<T>
         {
             var eventName = typeof(T).Name;
-            var handlerType = typeof(TH);
+            var handlerType = typeof(THandler);
 
-            //add the event type if the event type does not currently exist
+            //add new eventType if not exist prior
             if (!_eventTypes.Contains(typeof(T)))
             {
                 _eventTypes.Add(typeof(T));
             }
 
-            //add the eventHandler when a new event type is added.
+            //add the eventHandler when a new eventType added.
             if (!_handlers.ContainsKey(eventName))
             {
                 _handlers.Add(eventName, new List<Type>());
             }
 
-            //Validation 
+            //Validate that the Type of eventHandler does not exist in the _handlers.
             if (_handlers[eventName].Any(s => s.GetType() == handlerType))
             {
                 throw new ArgumentException(
                     $"Handler Type {handlerType.Name} is already registered for ' {eventName}'. ");
             }
 
+            //add new eventHandler in handlers for the event
             _handlers[eventName].Add(handlerType);
 
-            // StartBasicConsume<T>();
+            //Once subscribe, consume the messages
+            StartBasicConsume<T>();
+        }
+
+        private void StartBasicConsume<T>() where T : Event
+        {
+            var factory = new ConnectionFactory()
+            {
+                HostName = "localhost",
+                DispatchConsumersAsync = true // Async
+            };
+
+            var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
+
+            var eventName = typeof(T).Name;
+
+            channel.QueueDeclare(eventName, false, false, false, null);
+
+            //event consumer
+            var consumer = new AsyncEventingBasicConsumer(channel); //RabbitMQBus Type
+            
+            //it is a Delegate: a method pointer, a placeholder for events
+            // += is syntax for creating assigning a method pointer
+            //it is listening to message coming  the queue
+            consumer.Received += Consumer_Received; 
+
+            channel.BasicConsume(eventName, true, consumer);
+        }
+
+        // message already in the queue, someone subscribe to the event,
+        // we need a way to pick up that message and convert to an actual object so that 
+        // it can be send to the event bus 
+        private async Task Consumer_Received(object sender, BasicDeliverEventArgs eventArgs)
+        {
+            var eventName = eventArgs.RoutingKey; //eventArgs contains all info about the message delivered
+            var message = Encoding.UTF8.GetString(eventArgs.Body.Span); // message = Body of eventArgs
+
+            try
+            {
+                //know which handler is subscribed to this event and will process the event
+                await ProcessEvent(eventName, message).ConfigureAwait(false);
+            }
+            catch (Exception exception)
+            {
+            }
+        }
+
+        //the subscriber who subscribe the event will process the event
+        private async Task ProcessEvent(string eventName, string message)
+        {
+            if (_handlers.ContainsKey(eventName)
+            ) // look through dictionary of handlers and check if we have existing handler for the event
+            {
+                //if handler existed for this event
+                // multiple subscriptions for an event handler
+                var subscriptions = _handlers[eventName]; //subscription is List<T> that subscribe to this eventName
+                foreach (var subscription in subscriptions)
+                {
+                    //dynamic approach to our generics 
+                    //********** The part need to understand more *********
+                    var handler = Activator.CreateInstance(subscription); //create an instance of type subscription
+                    if (handler == null) continue;
+                    var eventType = _eventTypes.SingleOrDefault((t => t.Name == eventName));
+                    
+                    var @event = JsonConvert.DeserializeObject(message, eventType);
+                    // this will use generics to kick off the handle method inside our handler and passing the event
+                    var concreteType = typeof(IEventHandler<>).MakeGenericType(eventType);
+                    // rounte to the right handler in micro services
+                    await (Task) concreteType.GetMethod("Handle").Invoke(handler, new object[] {@event});
+                }
+            }
         }
     }
 }

@@ -1,0 +1,8 @@
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.deps.json
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.csprojAssemblyReference.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.AssemblyInfoInputs.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.AssemblyInfo.cs
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.pdb

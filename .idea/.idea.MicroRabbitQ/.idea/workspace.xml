@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="737e352a-c089-449e-8b8c-742b424617f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbitQ.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbitQ.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +39,10 @@
       <list>
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" />
-        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/Class1.cs" />
+        <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" />
         <option value="$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" />
       </list>
@@ -52,6 +61,18 @@
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587203045521</updated>
-      <workItem from="1587203048174" duration="3220000" />
+      <workItem from="1587203048174" duration="11356000" />
     </task>
     <servers />
   </component>
@@ -83,10 +104,11 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1587204865281">
-      <screen x="1680" y="0" width="3440" height="1440" />
+    <state x="1933" y="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1587293328649">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state x="3613" y="392" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050/1680.0.3440.1440@1680.0.3440.1440" timestamp="1587204865281" />
+    <state x="1933" y="392" key="Rider.ProjectTemplateDialog.Size/0.0.3440.1440@0.0.3440.1440" timestamp="1587293328649" />
     <state x="3928" y="337" key="RiderGenerateDialog" timestamp="1587205029329">
       <screen x="1680" y="0" width="3440" height="1440" />
     </state>
