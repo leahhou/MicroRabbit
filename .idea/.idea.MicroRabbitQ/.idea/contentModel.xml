@@ -44,6 +44,7 @@
       </e>
       <e p="MicroRabbit.Infrastructure.IoC" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyContainer.cs" t="Include" />
         <e p="MicroRabbit.Infrastructure.IoC.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -54,7 +55,14 @@
         </e>
       </e>
       <e p="MicroRabbitQ.sln" t="IncludeFlat" />
-      <e p="Microservices" t="Include" />
+      <e p="Microservices" t="Include">
+        <e p="Banking" t="Include">
+          <e p="Api" t="Include" />
+          <e p="Application" t="Include" />
+          <e p="Data" t="Include" />
+          <e p="Domain" t="Include" />
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Presentation" t="Include" />
     </e>

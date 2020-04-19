@@ -4,6 +4,138 @@
     "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj": {}
   },
   "projects": {
+    "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj",
+        "projectName": "MicroRabbit.Domain.Core",
+        "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj",
+        "packagesPath": "/Users/leah.hou/.nuget/packages/",
+        "outputPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/leah.hou/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj",
+        "projectName": "MicroRabbit.Infrastructure.Bus",
+        "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj",
+        "packagesPath": "/Users/leah.hou/.nuget/packages/",
+        "outputPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/leah.hou/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +159,14 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+              },
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
