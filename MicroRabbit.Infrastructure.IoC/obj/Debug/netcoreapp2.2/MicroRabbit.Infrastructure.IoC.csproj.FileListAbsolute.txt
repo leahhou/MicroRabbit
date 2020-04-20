@@ -11,3 +11,9 @@
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.csproj.CopyComplete
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb

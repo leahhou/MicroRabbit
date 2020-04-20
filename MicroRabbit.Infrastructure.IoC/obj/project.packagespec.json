@@ -18,6 +18,12 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
+          "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/MicroRabbit.Banking.Application.csproj": {
+            "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/MicroRabbit.Banking.Application.csproj"
+          },
+          "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Data/MicroRabbit.Banking.Data.csproj": {
+            "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Data/MicroRabbit.Banking.Data.csproj"
+          },
           "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
             "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
           },
