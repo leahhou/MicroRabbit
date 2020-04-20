@@ -1347,7 +1347,8 @@
       },
       "MicroRabbit.Banking.Domain/1.0.0": {
         "dependencies": {
-          "MicroRabbit.Domain.Core": "1.0.0"
+          "MicroRabbit.Domain.Core": "1.0.0",
+          "MicroRabbit.Transfer.Domain": "1.0.0"
         },
         "runtime": {
           "MicroRabbit.Banking.Domain.dll": {}
@@ -1387,6 +1388,8 @@
           "MicroRabbit.Banking.Data": "1.0.0",
           "MicroRabbit.Domain.Core": "1.0.0",
           "MicroRabbit.Infrastructure.Bus": "1.0.0",
+          "MicroRabbit.Transfer.Application": "1.0.0",
+          "MicroRabbit.Transfer.Data": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0-preview.2.20160.3"
         },
         "runtime": {
@@ -1394,6 +1397,18 @@
         },
         "compile": {
           "MicroRabbit.Infrastructure.IoC.dll": {}
+        }
+      },
+      "MicroRabbit.Transfer.Application/1.0.0": {
+        "dependencies": {
+          "MicroRabbit.Domain.Core": "1.0.0",
+          "MicroRabbit.Transfer.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MicroRabbit.Transfer.Application.dll": {}
+        },
+        "compile": {
+          "MicroRabbit.Transfer.Application.dll": {}
         }
       },
       "MicroRabbit.Transfer.Data/1.0.0": {
@@ -1412,6 +1427,9 @@
         }
       },
       "MicroRabbit.Transfer.Domain/1.0.0": {
+        "dependencies": {
+          "MicroRabbit.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "MicroRabbit.Transfer.Domain.dll": {}
         },
@@ -3772,6 +3790,11 @@
       "sha512": ""
     },
     "MicroRabbit.Infrastructure.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MicroRabbit.Transfer.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

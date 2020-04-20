@@ -69,3 +69,9 @@
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/obj/Debug/netcoreapp3.1/MicroRabbit.Banking.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Application.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Data.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Domain.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Application.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Data.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Domain.pdb

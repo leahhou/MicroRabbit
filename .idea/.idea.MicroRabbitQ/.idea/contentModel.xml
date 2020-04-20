@@ -145,7 +145,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="TransferController.cs" t="Include" />
         </e>
         <e p="MicroRabbit.Transfer.Api.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -160,7 +160,6 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="MicroRabbit.Transfer.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -201,8 +200,12 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CommandHandlers" t="Include" />
         <e p="Commands" t="Include" />
-        <e p="EventHandlers" t="Include" />
-        <e p="Events" t="Include" />
+        <e p="EventHandlers" t="Include">
+          <e p="TransferCreateEventHandler.cs" t="Include" />
+        </e>
+        <e p="Events" t="Include">
+          <e p="TransferCreateEvent.cs" t="Include" />
+        </e>
         <e p="Interfaces" t="Include">
           <e p="ITransferRepository.cs" t="Include" />
         </e>

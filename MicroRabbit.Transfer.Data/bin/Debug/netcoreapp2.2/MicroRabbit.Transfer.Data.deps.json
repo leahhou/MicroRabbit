@@ -18,6 +18,14 @@
           "MicroRabbit.Transfer.Data.dll": {}
         }
       },
+      "MediatR/8.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -839,7 +847,18 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "MicroRabbit.Domain.Core/1.0.0": {
+        "dependencies": {
+          "MediatR": "8.0.1"
+        },
+        "runtime": {
+          "MicroRabbit.Domain.Core.dll": {}
+        }
+      },
       "MicroRabbit.Transfer.Domain/1.0.0": {
+        "dependencies": {
+          "MicroRabbit.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "MicroRabbit.Transfer.Domain.dll": {}
         }
@@ -851,6 +870,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "MediatR/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nqtv05FHNNNLmEv4QN9pRtmSLa0bnDPciOjLKpA/k5FZIVS72vPyY3/1lHQ9V/dcQSMA5ZLig62SyRk2cSKNBA==",
+      "path": "mediatr/8.0.1",
+      "hashPath": "mediatr.8.0.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",
@@ -1460,6 +1486,11 @@
       "sha512": "sha512-VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "MicroRabbit.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MicroRabbit.Transfer.Domain/1.0.0": {
       "type": "project",

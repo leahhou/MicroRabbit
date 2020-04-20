@@ -7,6 +7,7 @@ using MediatR;
 using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Domain.Core.Commands;
 using MicroRabbit.Domain.Core.Events;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -17,14 +18,19 @@ namespace MicroRabbit.Infrastructure.Bus
     public sealed class RabbitMQBus : IEventBus
     {
         private readonly IMediator _mediator;
+
         //eventHandlers to handle our subscription events and event types'
-        private readonly Dictionary<string, List<Type>> _handlers; // eventHandler: key: eventName, value: List of subscriptions related to the eventName
+        private readonly Dictionary<string, List<Type>>
+            _handlers; // eventHandler: key: eventName, value: List of subscriptions related to the eventName
+
         private readonly List<Type> _eventTypes; // hold all types of event
+        private readonly IServiceScopeFactory _serviceScopeFactory;
 
         // like a subscription handler that handles and knows about which subscription are tired to which handlers and events
-        public RabbitMQBus(IMediator mediator)
+        public RabbitMQBus(IMediator mediator, IServiceScopeFactory serviceScopeFactory)
         {
             _mediator = mediator;
+            _serviceScopeFactory = serviceScopeFactory;
             _handlers = new Dictionary<string, List<Type>>();
             _eventTypes = new List<Type>();
         }
@@ -33,7 +39,7 @@ namespace MicroRabbit.Infrastructure.Bus
         {
             return _mediator.Send(command);
         }
-        
+
         //publish the event to the queue in RabbitMQ Server
         public void Publish<T>(T @event) where T : Event
         {
@@ -52,7 +58,7 @@ namespace MicroRabbit.Infrastructure.Bus
                 channel.BasicPublish("", eventName, null, body);
             }
         }
-        
+
         //takes in event + eventHandler, when subscribe to an event, it will used the required eventHandler
         public void Subscribe<T, THandler>() where T : Event where THandler : IEventHandler<T>
         {
@@ -102,11 +108,11 @@ namespace MicroRabbit.Infrastructure.Bus
 
             //event consumer
             var consumer = new AsyncEventingBasicConsumer(channel); //RabbitMQBus Type
-            
+
             //it is a Delegate: a method pointer, a placeholder for events
             // += is syntax for creating assigning a method pointer
             //it is listening to message coming  the queue
-            consumer.Received += Consumer_Received; 
+            consumer.Received += Consumer_Received;
 
             channel.BasicConsume(eventName, true, consumer);
         }
@@ -135,22 +141,24 @@ namespace MicroRabbit.Infrastructure.Bus
             if (_handlers.ContainsKey(eventName)
             ) // look through dictionary of handlers and check if we have existing handler for the event
             {
-                //if handler existed for this event
-                // multiple subscriptions for an event handler
-                var subscriptions = _handlers[eventName]; //subscription is List<T> that subscribe to this eventName
-                foreach (var subscription in subscriptions)
+                using (var scope = _serviceScopeFactory.CreateScope())
                 {
-                    //dynamic approach to our generics 
-                    //********** The part need to understand more *********
-                    var handler = Activator.CreateInstance(subscription); //create an instance of type subscription
-                    if (handler == null) continue;
-                    var eventType = _eventTypes.SingleOrDefault((t => t.Name == eventName));
-                    
-                    var @event = JsonConvert.DeserializeObject(message, eventType);
-                    // this will use generics to kick off the handle method inside our handler and passing the event
-                    var concreteType = typeof(IEventHandler<>).MakeGenericType(eventType);
-                    // rounte to the right handler in micro services
-                    await (Task) concreteType.GetMethod("Handle").Invoke(handler, new object[] {@event});
+                    //if handler existed for this event
+                    // multiple subscriptions for an event handler
+                    var subscriptions = _handlers[eventName]; //subscription is List<T> that subscribe to this eventName
+                    foreach (var subscription in subscriptions)
+                    {
+                        //dynamic approach to our generics 
+                        var handler = scope.ServiceProvider.GetService(subscription); //dependency injection to get the service
+                        if (handler == null) continue;
+                        var eventType = _eventTypes.SingleOrDefault((t => t.Name == eventName));
+
+                        var @event = JsonConvert.DeserializeObject(message, eventType);
+                        // this will use generics to kick off the handle method inside our handler and passing the event
+                        var concreteType = typeof(IEventHandler<>).MakeGenericType(eventType);
+                        // invoke the right handler in micro services
+                        await (Task) concreteType.GetMethod("Handle").Invoke(handler, new object[] {@event});
+                    }
                 }
             }
         }

@@ -1441,7 +1441,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "MicroRabbit.Domain.Core": "1.0.0"
+          "MicroRabbit.Domain.Core": "1.0.0",
+          "MicroRabbit.Transfer.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MicroRabbit.Banking.Domain.dll": {}
@@ -1469,6 +1470,7 @@
         "dependencies": {
           "MediatR": "8.0.1",
           "MicroRabbit.Domain.Core": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.3",
           "Newtonsoft.Json": "12.0.3",
           "RabbitMQ.Client": "6.0.0"
         },
@@ -1532,6 +1534,9 @@
       "MicroRabbit.Transfer.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "MicroRabbit.Domain.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MicroRabbit.Transfer.Domain.dll": {}
         },

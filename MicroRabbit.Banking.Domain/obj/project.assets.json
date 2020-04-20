@@ -229,6 +229,19 @@
         "runtime": {
           "bin/placeholder/MicroRabbit.Domain.Core.dll": {}
         }
+      },
+      "MicroRabbit.Transfer.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "MicroRabbit.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MicroRabbit.Transfer.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MicroRabbit.Transfer.Domain.dll": {}
+        }
       }
     }
   },
@@ -721,11 +734,17 @@
       "type": "project",
       "path": "../MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj",
       "msbuildProject": "../MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+    },
+    "MicroRabbit.Transfer.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj",
+      "msbuildProject": "../MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "MicroRabbit.Domain.Core >= 1.0.0",
+      "MicroRabbit.Transfer.Domain >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -759,6 +778,9 @@
           "projectReferences": {
             "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
               "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+            },
+            "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj": {
+              "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj"
             }
           }
         }

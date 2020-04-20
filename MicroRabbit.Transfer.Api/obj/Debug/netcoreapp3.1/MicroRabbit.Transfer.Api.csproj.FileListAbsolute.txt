@@ -73,3 +73,5 @@
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Domain.pdb
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Api/obj/Debug/netcoreapp3.1/MicroRabbit.Transfer.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Api/obj/Debug/netcoreapp3.1/MicroRabbit.Transfer.Api.csproj.CopyComplete
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Application.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Api/bin/Debug/netcoreapp3.1/MicroRabbit.Transfer.Application.pdb

@@ -20,6 +20,9 @@
         "projectReferences": {
           "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
             "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+          },
+          "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj": {
+            "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj"
           }
         }
       }

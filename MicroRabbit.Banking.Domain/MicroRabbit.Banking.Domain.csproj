@@ -5,11 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="EventHandlers" />
+      <ProjectReference Include="..\MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj" />
+      <ProjectReference Include="..\MicroRabbit.Transfer.Domain\MicroRabbit.Transfer.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj" />
+      <Folder Include="EventHandlers" />
     </ItemGroup>
 
 </Project>
