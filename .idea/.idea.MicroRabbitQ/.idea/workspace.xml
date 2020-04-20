@@ -2,16 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="737e352a-c089-449e-8b8c-742b424617f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/DependencyContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroRabbitQ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/bin/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.Bus.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.csproj.CopyComplete" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/Debug/netcoreapp2.2/MicroRabbit.Infrastructure.IoC.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/MicroRabbit.Infrastructure.IoC.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/MicroRabbit.Infrastructure.IoC.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/MicroRabbit.Infrastructure.IoC.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/MicroRabbit.Infrastructure.IoC.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +55,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Infrastructure.Bus/RabbitMQBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Message.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Banking.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Events/Event.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/DependencyContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroRabbit.Domain.Core/Bus/IEventBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroRabbit.Infrastructure.IoC/DependencyContainer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,6 +91,38 @@
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.MicroRabbit.Banking.Api">
+    <configuration name="MicroRabbit.Banking.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MicroRabbit.Banking.Api/MicroRabbit.Banking.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="MicroRabbit.Banking.Api" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroRabbit.Banking.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MicroRabbit.Banking.Api/MicroRabbit.Banking.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -88,14 +152,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,0 +1,8 @@
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.deps.json
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.csprojAssemblyReference.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.AssemblyInfoInputs.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.AssemblyInfo.cs
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Application/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Application.pdb
