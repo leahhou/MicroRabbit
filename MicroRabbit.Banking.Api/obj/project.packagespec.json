@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj": {
+            "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.IoC/MicroRabbit.Infrastructure.IoC.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
