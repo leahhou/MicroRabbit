@@ -367,6 +367,12 @@
               },
               "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj": {
                 "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Infrastructure.Bus/MicroRabbit.Infrastructure.Bus.csproj"
+              },
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/MicroRabbit.Transfer.Application.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/MicroRabbit.Transfer.Application.csproj"
+              },
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/MicroRabbit.Transfer.Data.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/MicroRabbit.Transfer.Data.csproj"
               }
             }
           }
@@ -478,6 +484,69 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/MicroRabbit.Transfer.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/MicroRabbit.Transfer.Application.csproj",
+        "projectName": "MicroRabbit.Transfer.Application",
+        "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/MicroRabbit.Transfer.Application.csproj",
+        "packagesPath": "/Users/leah.hou/.nuget/packages/",
+        "outputPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Application/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/leah.hou/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/MicroRabbit.Domain.Core.csproj"
+              },
+              "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj": {
+                "projectPath": "/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Domain/MicroRabbit.Transfer.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
