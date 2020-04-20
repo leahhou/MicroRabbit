@@ -6,5 +6,6 @@
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.AssemblyInfo.cs
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.dll
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.pdb
-/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.runtimeconfig.json
-/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.runtimeconfig.dev.json
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Banking.Domain/obj/Debug/netcoreapp2.2/MicroRabbit.Banking.Domain.csproj.CopyComplete

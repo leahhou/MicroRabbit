@@ -1,0 +1,8 @@
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.deps.json
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/bin/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.csprojAssemblyReference.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.AssemblyInfoInputs.cache
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.AssemblyInfo.cs
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.dll
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Transfer.Data/obj/Debug/netcoreapp2.2/MicroRabbit.Transfer.Data.pdb
