@@ -8,9 +8,7 @@
       <Folder Include="CommandHandlers" />
       <Folder Include="Commands" />
       <Folder Include="EventHandlers" />
-      <Folder Include="Interfaces" />
       <Folder Include="Events" />
-      <Folder Include="Models" />
     </ItemGroup>
 
 </Project>

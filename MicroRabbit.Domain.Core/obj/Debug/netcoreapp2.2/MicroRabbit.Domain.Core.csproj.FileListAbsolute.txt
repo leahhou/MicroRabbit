@@ -6,3 +6,5 @@
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.AssemblyInfo.cs
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.dll
 /Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/obj/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.pdb
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.runtimeconfig.json
+/Users/leah.hou/RiderProjects/MicroRabbitQ/MicroRabbit.Domain.Core/bin/Debug/netcoreapp2.2/MicroRabbit.Domain.Core.runtimeconfig.dev.json
